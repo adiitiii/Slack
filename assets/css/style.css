@@ -1,40 +1,26 @@
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	color: #fff;
-}
-
-html {
-	font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI",
-		Tahoma, Arial, sans-serif;
-	/* font-size: 10px; */
-	/* 10px / 16px = 0.625 = 62.5% */
-	/* Percentage of user's browser font-size setting */
-	font-size: 62.5%;
-}
-
+/* ********************** */
+/* NAVIGATION */
+/* ********************** */
 .header {
 	display: flex;
-	height: 100%;
-	background-color: purple;
+	align-items: center;
+	height: 7rem;
 	font-size: 1.5rem;
 	padding: 0 4vw;
-	font-family: "Ubuntu", sans-serif;
 }
 
-.nav-1 {
+.nav-info {
 	display: flex;
 	align-items: flex-start;
 }
 
 .logo {
 	margin-right: 2rem;
-	width: 120px;
+	width: 115px;
 	margin-top: 1.7rem;
 }
 
-.main-nav {
+.nav-text-box {
 	margin: 0 20px;
 	cursor: pointer;
 }
@@ -42,9 +28,10 @@ html {
 .main-nav-list {
 	list-style: none;
 	gap: 30px;
-	margin-top: 27px;
+	margin-top: 25px;
 	padding-left: 0.9375rem;
 	padding-right: 0.9375rem;
+	font-size: 1.5rem;
 	font-weight: 700;
 	justify-content: flex-start;
 	display: flex;
@@ -52,13 +39,13 @@ html {
 	flex: 1;
 }
 
-.nav-2 {
+.nav-action {
 	display: flex;
 	align-items: center;
 	margin-top: 27px;
 }
 
-.btn {
+.nav-btn {
 	margin-left: 10rem !important;
 	font-size: 22px;
 	--ionicon-stroke-width: 46px;
@@ -71,41 +58,113 @@ html {
 
 .sign-in {
 	margin-right: 1.875rem !important;
-	font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI",
-		Tahoma, Arial, sans-serif;
 	text-decoration: none;
 	font-weight: 900;
 }
 
-.action {
-	font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI",
-		Tahoma, Arial, sans-serif;
-	text-decoration: none;
+.nav-action {
+	margin-bottom: 1rem;
+}
+.nav-cta {
 	text-transform: uppercase;
-	font-weight: 700;
-	letter-spacing: 0.8px;
 	font-size: 1.4rem;
+	display: flex;
+	align-items: center;
+	padding: 0.75rem 1rem;
 }
 
 .sales {
-	margin-left: 0.5rem;
-	box-shadow: inset 0 0 0 1px #fff;
+	display: inline-block;
+	margin-left: 0.8rem;
 	text-decoration: none;
-	background-color: transparent;
-	border-radius: 0.1rem;
 	padding: 1.2rem 1.6rem;
+	box-shadow: inset 0 0 0 1.5px #fff;
+	background-color: transparent;
+	border-radius: 0.2rem;
+	font-weight: 700;
 }
 
 .free {
+	display: inline-block;
 	text-decoration: none;
-	margin-left: 1.25rem;
+	margin-left: 2rem;
 	padding: 1.2rem 1.6rem;
+	color: #611f69;
+	box-shadow: inset 0 0 0 2px #fff;
+	border-radius: 0.2rem;
 	background-color: #fff;
-	border-radius: 4px;
-	color: rgb(97, 31, 105);
-	box-shadow: inset 0 0 0 2px #611f69;
-	margin-left: 1.25rem;
-	transition: box-shadow 420ms cubic-bezier(0.165, 0.84, 0.44, 1),
-		color 420ms cubic-bezier(0.165, 0.84, 0.44, 1),
-		background 420ms cubic-bezier(0.165, 0.84, 0.44, 1);
+	font-weight: 700;
+}
+
+/* ********************** */
+/* SECTION HERO */
+/* ********************** */
+.section-hero {
+	padding: 0 4vw;
+	margin: 0 auto;
+	margin-top: 6rem;
+}
+
+.heading-primary {
+	font-size: 6.2rem;
+	color: #fff !important;
+	font-weight: 700;
+	letter-spacing: -1.5px;
+	text-align: left;
+	font-family: "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial,
+		sans-serif;
+	max-width: 14em;
+	display: block;
+}
+
+.heading-description {
+	color: #ecb22e !important;
+}
+
+.text-description {
+	margin: 0.25rem 0 3.5rem;
+	max-width: 55rem;
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+.btn-sign-email {
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.8px;
+	box-shadow: inset 0 0 0 1px #611f69;
+	color: #611f69;
+	font-size: 1.4rem;
+	font-weight: 700;
+	background-color: #fff;
+	display: inline-block;
+	white-space: nowrap;
+	padding: 1.9rem 4rem 2rem 4rem;
+	cursor: pointer;
+}
+
+.btn-sign-google {
+	/* display: flex; */
+	justify-content: space-between;
+	align-items: center;
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 0.5rem;
+}
+
+.google-text {
+	text-transform: uppercase;
+	letter-spacing: 0.8px;
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: #fff;
+	background-color: #4285f4;
+	box-shadow: inset 0 0 0 2px #4285f4;
+	padding: 1.9rem 4rem 2rem 4rem;
+}
+
+.google-logo {
+	display: inline-block;
+	width: 49px;
 }

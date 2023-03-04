@@ -1,0 +1,24 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: #fff;
+}
+
+html {
+	font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI",
+		Tahoma, Arial, sans-serif;
+	/* font-size: 10px; */
+	/* 10px / 16px = 0.625 = 62.5% */
+	/* Percentage of user's browser font-size setting */
+	font-size: 62.5%;
+	background-color: #541554;
+}
+
+.grid {
+	display: grid;
+}
+
+.grid-2--cols {
+	grid-template-columns: repeat(2, 1fr);
+}
