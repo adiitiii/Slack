@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Slack</title>
+
+		<link href="styles/style.css" rel="stylesheet" />
+		<link href="styles/general.css" rel="stylesheet" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Ubuntu:wght@300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+	</head>
+	<body>
+		<!-- <div class="bg-color"> -->
+		<header class="header">
+			<div class="nav-info">
+				<div class="nav-img-box">
+					<a href="#">
+						<img
+							src="assets/img/hero_section/logo.svg"
+							alt="Slack"
+							class="logo"
+						/>
+					</a>
+				</div>
+
+				<nav class="nav-text-box">
+					<ul class="main-nav-list">
+						<li>
+							<a href="#" class="main-nav-link">Product</a>
+						</li>
+						<li>
+							<a href="#" class="main-nav-link">Solutions</a>
+						</li>
+						<li>
+							<a href="#" class="main-nav-link">Entreprise</a>
+						</li>
+						<li>
+							<a href="#" class="main-nav-link">Resource</a>
+						</li>
+						<li>
+							<a href="#" class="main-nav-link">Pricing</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="nav-action">
+				<div class="nav-btn">
+					<ion-icon
+						class="search-btn"
+						name="search-outline"
+					></ion-icon>
+				</div>
+				<div class="nav-sign-in">
+					<a href="#" class="sign-in">Sign in</a>
+				</div>
+				<div class="nav-cta">
+					<a href="#" class="sales">talk to sales</a>
+					<a href="#" class="free">try for free</a>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="section-hero">
+				<div class="hero grid">
+					<div class="hero-text-box">
+						<h1 class="heading-primary">
+							Made for people.
+							<span class="yellow-font"
+								>Built for productivity.</span
+							>
+						</h1>
+						<p class="heading-description margin">
+							With all your people, tools and communication in one
+							place, you can work faster and more flexibly than
+							ever before.
+						</p>
+
+						<div class="hero__cta-box flex">
+							<a href="#" class="hero__cta hero__cta-email">
+								sign up with email address
+							</a>
+							<a href="#" class="hero__cta hero__cta-google flex">
+								<img
+									src="assets/img/hero_section/google-svg.svg"
+									alt="Google"
+									class="hero__cta-google_icon"
+								/>
+								<span class="hero__cta-google_text">
+									sign up with google
+								</span>
+							</a>
+						</div>
+
+						<p class="hero__free_to_use margin">
+							<strong>Slack is free to try</strong> for as long as
+							you like
+						</p>
+					</div>
+
+					<div class="hero-video">
+						<video
+							loop
+							muted
+							playsinline
+							title="Team discussing work in Slack app"
+							class="team-discussing-slack"
+							autoplay="autoplay"
+						>
+							<source
+								src="assets/img/hero_section/hero_video.webm"
+								type="video/webm"
+							/>
+						</video>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-featured">
+				<p class="featured_text">
+					trusted by companies all over the world
+				</p>
+				<div class="container-featured flex">
+					<figure class="featured-comapnies">
+						<img
+							src="assets/img/featured-in_section/company1.png"
+							alt="Seek"
+							class="seek-logo"
+						/>
+					</figure>
+
+					<figure class="featured-comapnies">
+						<img
+							src="assets/img/featured-in_section/logo-xero-company2.png"
+							alt="Xero"
+							class="xero-logo"
+						/>
+					</figure>
+
+					<figure class="featured-comapnies">
+						<img
+							src="assets/img/featured-in_section/rea-group-company3.png"
+							alt="Rea"
+							class="rea-logo"
+						/>
+					</figure>
+
+					<figure class="featured-comapnies">
+						<img
+							src="assets/img/featured-in_section/rmit-company4.png"
+							alt="RMIT"
+							class="rmit-logo"
+						/>
+					</figure>
+
+					<figure class="featured-comapnies">
+						<img
+							src="assets/img/featured-in_section/logo-ibm-company5.png"
+							alt="Ibm"
+							class="ibm-logo"
+						/>
+					</figure>
+
+					<figure class="featured-comapnies">
+						<img
+							src="assets/img/featured-in_section/deliveroo-comapny6.png"
+							alt="Deliveroo"
+							class="deliveroo-logo"
+						/>
+					</figure>
+				</div>
+
+				<div class="about-section">
+					<div class="container-1 grid grid-2--cols_about">
+						<div class="about-video1">
+							<video
+								loop
+								muted
+								playsinline
+								title="Bring your team together"
+								width="700px"
+								height="400px"
+								class="team-bringing-together"
+								autoplay="autoplay"
+							>
+								<source
+									src="assets/img/about us_section/bring_your_team_together.webm"
+									type="video/webm"
+								/>
+							</video>
+						</div>
+
+						<div class="about-text1">
+							<h2 class="about-section_heading1">
+								Bring your team together
+							</h2>
+
+							<p class="about-section_description1">
+								At the heart of Slack are channels: organised
+								spaces for everyone and everything that you need
+								for work. In channels, it's easier to connect
+								across departments, offices, time zones and even
+								other companies.
+							</p>
+
+							<a href="#" class="learn-more"
+								>Learn more about channels
+								<ion-icon
+									class="forward-arrow"
+									name="arrow-forward-outline"
+								></ion-icon
+							></a>
+						</div>
+					</div>
+
+					<div class="container-1 grid grid-2--cols_about">
+						<div class="about-text1 choose-about">
+							<h2 class="about-section_heading1">
+								Choose how to want to work
+							</h2>
+
+							<p class="about-section_description1">
+								In Slack, you’ve got all the flexibility to work
+								when, where and how it’s best for you. You can
+								easily chat, send audio and video clips, or join
+								a huddle to talk things through live.
+							</p>
+
+							<a href="#" class="learn-more"
+								>Learn more about flexible communication
+								<ion-icon
+									class="forward-arrow"
+									name="arrow-forward-outline"
+								></ion-icon
+							></a>
+						</div>
+
+						<div class="about-video1">
+							<video
+								loop
+								muted
+								playsinline
+								title="Choose how to want to work"
+								width="700px"
+								height="400px"
+								class="team-bringing-together"
+								autoplay="autoplay"
+							>
+								<source
+									src="assets/img/about us_section/choose_how_you_want_to_work.webm.webm"
+									type="video/webm"
+								/>
+							</video>
+						</div>
+					</div>
+
+					<div class="container-1 grid grid-2--cols_about">
+						<div class="about-video1">
+							<video
+								loop
+								muted
+								playsinline
+								title="Centralised access to tools"
+								width="700px"
+								height="400px"
+								class="faster-access"
+								autoplay="autoplay"
+							>
+								<source
+									src="assets/img/about us_section/move_faster.webm"
+									type="video/webm"
+								/>
+							</video>
+						</div>
+
+						<div class="about-text1">
+							<h2 class="about-section_heading1">
+								Move faster with your tools in one place
+							</h2>
+
+							<p class="about-section_description1">
+								With your other work apps connected to Slack,
+								you can work faster by switching tabs less. And
+								with powerful tools like Workflow Builder, you
+								can automate away routine tasks.
+							</p>
+
+							<a href="#" class="learn-more"
+								>Learn more about Slack platform
+								<ion-icon
+									class="forward-arrow"
+									name="arrow-forward-outline"
+								></ion-icon
+							></a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="in-real-use-section">
+				<h3 class="use-heading">Teams large and small rely on Slack</h3>
+
+				<p class="use-desc">
+					Slack securely scales up to support collaboration at the
+					world’s biggest companies.
+				</p>
+				<div class="use__btn-cta">
+					<a href="#" class="use__meet-cta">
+						meet slack for entreprise
+					</a>
+					<a href="#" class="use__btn-sales"> talk to sales </a>
+				</div>
+
+				<div class="percentage-use flex">
+					<p class="improved commu">
+						<span class="percent">85%</span> of users say that Slack
+						has improved communication*
+					</p>
+
+					<p class="improved work">
+						<span class="percent">86%</span> feel that their ability
+						to work remotely has improved*
+					</p>
+
+					<p class="improved connect">
+						<span class="percent">88%</span> feel more connected to
+						their teams*
+					</p>
+				</div>
+
+				<!-- <div class="real-use-emojis">
+					<img
+						aria-hidden="true"
+						class="c-emoji__hero-image handshake-emo"
+						src="assets/img/slack_in-real_usage/emoji-handshake.png"
+						srcset="
+							assets/img/slack_in-real_usage/emoji-handshake 1x,
+							assets/img/slack_in-real_usage/emoji-handshake 2x
+						"
+					/>
+				</div> -->
+
+				<div class="real-experience-matt_beal grid">
+					<div class="matt-beal-video grid">
+						<video
+							loop
+							muted
+							playsinline
+							title="Video featuring a slack customer"
+							width="700px"
+							height="400px"
+							class="faster-access"
+							autoplay="autoplay"
+						>
+							<source
+								src="assets/img/slack_in-real_usage/matt-beal-video.mp4"
+								type="video/mp4"
+							/>
+						</video>
+					</div>
+					<div class="matt-beal-writeup">
+						<p class="customer-quote">
+							‘Many technology employees were gravitating
+							naturally to Slack. So we followed our users to what
+							has become one of our most important tools.’
+						</p>
+						<p>
+							<span class="director-name">Matt Beal</span>
+						</p>
+						<span class="director-description">
+							Director of Technology Strategy and Architecture,
+							Vodafone
+						</span>
+
+						<a href="#" class="link-other-stories">
+							<span class="other_related_stories"
+								>See more customer stories</span
+							>
+							<ion-icon
+								class="forward-arrow"
+								name="arrow-forward-outline"
+							></ion-icon>
+						</a>
+					</div>
+				</div>
+				<p class="small-text">
+					* Weighted average. Based on 2,707 survey responses from
+					weekly Slack users in the US, UK, Australia and Canada with
+					a ± 2% margin of error at 95% CI (December 2021).
+				</p>
+			</section>
+
+			<section class="featured-o-section">
+				<h2 class="cards-heading">
+					Take a deeper dive into a new way to work
+				</h2>
+
+				<div class="featured-cards grid grid-4--cols">
+					<!-- <div class="card-featured"> -->
+					<div class="container-wrap">
+						<figure class="c-promo-media">
+							<img
+								src="assets/img/featured-o-section/cards1-promo-state-of-work.jpg"
+								alt="Promo state of work"
+								class="promo-state-of-work-img"
+							/>
+							<span
+								class="subheading-promo-img"
+								aria-hidden="true"
+								>Report</span
+							>
+						</figure>
+
+						<div class="heading-promo-img">
+							The State of Work 2023
+						</div>
+						<a href="#" class="promo-ctas" alt="Read More">
+							<span class="read-more-text">read more</span>
+							<ion-icon
+								class="forward-arrow"
+								name="arrow-forward-outline"
+							></ion-icon>
+						</a>
+						<!-- </div> -->
+					</div>
+					<div class="card-featured">
+						<div class="container-wrap">
+							<figure class="c-promo-media">
+								<img
+									src="assets/img/featured-o-section/cards2-wtny-resource-tile.jpg"
+									alt="WTNY resource title"
+									class="wtny-resource-img"
+								/>
+								<span
+									class="subheading-promo-img"
+									aria-hidden="true"
+									>On Demand</span
+								>
+							</figure>
+
+							<h3 class="heading-promo-img">
+								Big things are launching. Relive the highlights
+								of world tour New York!
+							</h3>
+
+							<a href="#" class="promo-ctas" alt="Read More">
+								<span class="read-more-text">read more</span>
+								<ion-icon
+									class="forward-arrow"
+									name="arrow-forward-outline"
+								></ion-icon>
+							</a>
+						</div>
+					</div>
+					<div class="card-featured">
+						<div class="container-wrap">
+							<figure class="c-promo-media">
+								<img
+									src="assets/img/featured-o-section/card3-promo-open-ai.jpg"
+									alt="promo-open-ai"
+									class="open-ai-img"
+								/>
+								<span
+									class="subheading-promo-img"
+									aria-hidden="true"
+									>Customer Story</span
+								>
+							</figure>
+
+							<h3 class="heading-promo-img">
+								The next big thing? AI for everyone.
+							</h3>
+
+							<a href="#" class="promo-ctas" alt="Read More">
+								<span class="read-more-text">read more</span>
+								<ion-icon
+									class="forward-arrow"
+									name="arrow-forward-outline"
+								></ion-icon>
+							</a>
+						</div>
+					</div>
+					<div class="card-featured">
+						<div class="container-wrap">
+							<figure class="c-promo-media">
+								<img
+									src="assets/img/featured-o-section/cards4-promo-boost-productivity.jpg"
+									alt="promo-boost-productivity"
+									class="boost-productivity"
+								/>
+								<span
+									class="subheading-promo-img"
+									aria-hidden="true"
+									>Webinar</span
+								>
+							</figure>
+
+							<h3 class="heading-promo-img">
+								Top Slack tips to boost productivity.
+							</h3>
+
+							<a href="#" class="promo-ctas" alt="Read More">
+								<span class="read-more-text">read more</span>
+								<ion-icon
+									class="forward-arrow"
+									name="arrow-forward-outline"
+								></ion-icon>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<section class="section-footer">
+				<div class="c-type__heading">
+					<span class="c-type__headline-primary"
+						>See all that you can accomplish with Slack</span
+					>
+				</div>
+			</section>
+		</footer>
+	</body>
+</html>

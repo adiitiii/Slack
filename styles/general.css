@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #fff;
+}
+
+html {
+	font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI",
+		Tahoma, Arial, sans-serif;
+	/* font-size: 10px; */
+	/* 10px / 16px = 0.625 = 62.5% */
+	/* Percentage of user's browser font-size setting */
+	font-size: 62.5%;
+	background-color: #f4ede4;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: 1200px;
+}
+
+.grid {
+	display: grid;
+}
+
+.flex {
+	display: flex;
+}
+
+.margin {
+	margin: 0.25rem 0 3.5rem;
+}
